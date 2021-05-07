@@ -3,8 +3,6 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { DialogOverlay, DialogContent } from '@reach/dialog';
 
-import { COLORS, QUERIES } from '../../constants';
-
 import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
 import VisuallyHidden from '../VisuallyHidden';
@@ -58,7 +56,7 @@ const Content = styled(DialogContent)`
   flex-direction: column;
   height: 100%;
   margin-left: 75px;
-  background-color: ${COLORS.white};
+  background-color: var(--color-white);
 
   & a {
     color: inherit;
@@ -80,11 +78,11 @@ const Nav = styled.nav`
   flex-direction: column;
   gap: ${22 / 16}rem;
   margin-left: 32px;
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
   font-size: ${18 / 16}rem;
 
   & > a:first-of-type {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `;
 
@@ -99,7 +97,7 @@ const Footer = styled.footer`
   flex-direction: column;
   gap: ${14 / 16}rem;
   margin: auto auto 32px 32px;
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
   font-size: ${14 / 16}rem;
 `;
 
