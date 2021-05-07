@@ -21,6 +21,11 @@ const App = () => {
 const Main = styled.main`
   padding: 64px 32px;
 
+  @media (${QUERIES.tabletMax}) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
   @media (${QUERIES.mobileMax}) {
     padding-left: 16px;
     padding-right: 16px;
