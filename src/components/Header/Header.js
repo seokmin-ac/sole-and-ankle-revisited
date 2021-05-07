@@ -87,6 +87,9 @@ const MobileButtons = styled.div`
   @media (${QUERIES.tabletMax}) {
     display: flex;
     align-items: center;
+    gap: 36px;
+  }
+  @media (${QUERIES.mobileMax}) {
     gap: 24px;
   }
 `;

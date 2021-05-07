@@ -34,7 +34,10 @@ const Wrapper = styled.div`
   padding-right: 32px;
 
   @media (${QUERIES.tabletMax}) {
-    display: none;
+    & * {
+      display: none;
+    }
+    height: 4px;
   }
 `;
 
